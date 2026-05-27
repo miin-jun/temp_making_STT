@@ -86,7 +86,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'hpm_db',
         'USER': 'root',
-        'PASSWORD': '1234',
+        'PASSWORD': '1231231234',
         'HOST': 'localhost',
         'PORT': '3306',
         'OPTIONS': {
@@ -131,4 +131,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# 녹음 파일 저장 경로
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
+# RunPod 서버 주소 (실제 RunPod URL로 교체 필요)
+RUNPOD_MINUTES_URL = "--------------실제 주소 입력---------------"  # 회의록 생성
 
